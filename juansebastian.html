@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juan Salazar Cinematography</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <style>
+    html, body { margin: 0; padding: 0; font-family: sans-serif; background-color: #000; color: #fff; }
+    .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.4); display: flex; flex-direction: column; justify-content: center; align-items: center; }
+    video.hero-video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="relative h-screen">
+    <video class="hero-video" autoplay muted loop>
+      <source src="your-reel.mp4" type="video/mp4">
+    </video>
+    <div class="overlay">
+      <h1 class="text-5xl md:text-7xl font-bold">Juan Salazar</h1>
+      <h2 class="text-xl md:text-2xl text-gray-300 mt-4">Cinematography</h2>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="py-20 px-6 md:px-20">
+    <h3 class="text-3xl font-semibold mb-10">Featured Work</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+        <video class="w-full" autoplay muted loop>
+          <source src="videos/project1.mp4" type="video/mp4">
+        </video>
+        <div class="p-4">
+          <h4 class="text-lg font-medium">Project 1</h4>
+        </div>
+      </div>
+      <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+        <video class="w-full" autoplay muted loop>
+          <source src="videos/project2.mp4" type="video/mp4">
+        </video>
+        <div class="p-4">
+          <h4 class="text-lg font-medium">Project 2</h4>
+        </div>
+      </div>
+      <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+        <video class="w-full" autoplay muted loop>
+          <source src="videos/project3.mp4" type="video/mp4">
+        </video>
+        <div class="p-4">
+          <h4 class="text-lg font-medium">Project 3</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="bg-gray-900 py-20 px-6 md:px-20 text-center">
+    <h3 class="text-3xl font-semibold mb-6">Let’s Collaborate</h3>
+    <p class="text-gray-400 mb-6">Get in touch for cinematography work, freelance bookings, or creative collabs.</p>
+    <a href="mailto:your.email@example.com" class="inline-block bg-white text-black font-semibold py-3 px-8 rounded-lg hover:bg-gray-300 transition">Contact Me</a>
+  </section>
+
+</body>
+</html>
